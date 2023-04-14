@@ -9,7 +9,7 @@ export const Logout = () => {
 
     const logout = () => {
         signOut(auth)
-        navigate('/todo-v2')
+        navigate('/todo-v2/')
     }
 
     return <LogoutBtn onClick={logout}>Выйти</LogoutBtn>

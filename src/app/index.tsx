@@ -8,7 +8,7 @@ export const App: React.FC = () => {
     return (
         <React.Suspense>
             <Routes>
-                <Route index path="/todo-v2" element={<Home />} />
+                <Route index path="/todo-v2/" element={<Home />} />
                 <Route path="/todo-v2/todos" element={<ToDo />} />
             </Routes>
         </React.Suspense>
