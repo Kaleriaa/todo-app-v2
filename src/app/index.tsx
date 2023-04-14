@@ -6,11 +6,11 @@ const ToDo = React.lazy(() => import('@pages/todo'))
 
 export const App: React.FC = () => {
     return (
-        <Routes>
-            <React.Suspense>
+        <React.Suspense>
+            <Routes>
                 <Route index path="/todo-v2" element={<Home />} />
                 <Route path="/todo-v2/todos" element={<ToDo />} />
-            </React.Suspense>
-        </Routes>
+            </Routes>
+        </React.Suspense>
     )
 }
