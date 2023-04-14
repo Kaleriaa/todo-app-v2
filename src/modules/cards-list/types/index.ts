@@ -4,4 +4,4 @@ export interface CardState {
     list: Card[]
 }
 
-export type TextState = Pick<Card, 'item' | 'text'>
+export type TextState = Pick<Card, 'id' | 'text'>

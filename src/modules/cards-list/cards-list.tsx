@@ -1,21 +1,18 @@
 import React from 'react'
 import { DndProvider } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
-import { useSelector } from 'react-redux'
 import styled from 'styled-components'
 import { Column } from './components/column'
 import { ToDoCard } from './components/todo-card'
 import { cardLabels, coverColor } from './constant'
-import { selectSearch, selectToDo } from './helpers/selectors'
+import { selectToDo } from './helpers/selectors'
 import { fireStore } from 'configs/firebase'
 import { useCollectionData } from 'react-firebase-hooks/firestore'
-import { Query, collection, orderBy, query } from 'firebase/firestore'
+import { Query, collection, query } from 'firebase/firestore'
 import { Loading } from '@components/loading'
 import { Card } from '@types'
 
 export const CardsList = React.memo(() => {
-    const resultTasks = useSelector(selectSearch)
-
     const [tasks, loading, error] = useCollectionData(
         query(collection(fireStore, 'tasks')) as Query<Card>,
     )

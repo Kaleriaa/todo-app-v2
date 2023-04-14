@@ -5,9 +5,8 @@ import { RootState } from '@redux/store'
 import { AppHeader } from '@modules/header'
 import { CardsList } from '@modules/cards-list/cards-list'
 import styled from 'styled-components'
-import { useNavigate } from 'react-router-dom'
 
-export const ToDo = () => {
+const ToDo = () => {
     const dispatch = useDispatch()
 
     const theme = useSelector(
@@ -25,6 +24,8 @@ export const ToDo = () => {
         </Container>
     )
 }
+
+export default ToDo
 
 const Container = styled.div<{ bg: string }>`
     width: 100vw;

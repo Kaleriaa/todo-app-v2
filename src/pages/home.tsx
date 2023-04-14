@@ -3,7 +3,7 @@ import { BgAnimated } from '@ui/bg-animated'
 import React from 'react'
 import styled from 'styled-components'
 
-export const Home = () => {
+const Home = () => {
     return (
         <Container>
             <Title>ToDoS</Title>
@@ -11,6 +11,8 @@ export const Home = () => {
         </Container>
     )
 }
+
+export default Home
 
 const Container = styled.div`
     width: 100%;
