@@ -1,5 +1,4 @@
 import { Login } from '@components/login'
-import { BgAnimated } from '@ui/bg-animated'
 import React from 'react'
 import styled from 'styled-components'
 
