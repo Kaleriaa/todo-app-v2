@@ -4,6 +4,10 @@ import { auth } from 'configs/firebase'
 import { signOut } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
 
+/**
+ *
+ * @returns {JSX.Element} return Button for logout
+ */
 export const Logout = () => {
     const navigate = useNavigate()
 

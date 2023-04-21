@@ -2,6 +2,9 @@ import { Login } from '@components/login'
 import React from 'react'
 import styled from 'styled-components'
 
+/**
+ * Home page interface
+ */
 const Home = () => {
     return (
         <Container>

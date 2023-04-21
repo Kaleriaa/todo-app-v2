@@ -8,6 +8,9 @@ import { Settings } from '@modules/settings'
 import { RootState } from '@redux/store'
 import { Avatar } from '@ui/avatar'
 
+/**
+ * @returns {JSX.Element} return Header
+ */
 export const AppHeader = React.memo(() => {
     const [theme, setTheme] = React.useState<boolean>(false)
     const [search, setSearch] = React.useState<string>('')

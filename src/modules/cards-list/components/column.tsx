@@ -10,10 +10,18 @@ import { useDrop, DropTargetMonitor } from 'react-dnd'
 import { fireStore } from 'configs/firebase'
 import { RootState } from '@redux/store'
 
+/**
+ * @param props
+ * @type {Query<CardState>}
+ * @returns {JSX.Element} return Column
+ */
 export const Column: React.FC<CardState> = (props) => {
     const [active, setActive] = React.useState<boolean>(false)
     const textAreaRef = React.useRef<HTMLTextAreaElement | null>(null)
 
+    /**
+     * @type {string | null}
+     */
     const { displayName, photoURL } = useSelector(
         (state: RootState) => state.userSlice,
     )

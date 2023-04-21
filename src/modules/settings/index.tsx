@@ -4,6 +4,10 @@ import { appear } from '@ui/appear-animate'
 import { Profile } from '@components/user-profile'
 import { Theme } from '@components/theme'
 
+/**
+ *
+ * @returns {JSX.Element} return setting`s block
+ */
 export const Settings: React.FC = () => {
     return (
         <Widget>

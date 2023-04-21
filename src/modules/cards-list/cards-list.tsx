@@ -12,7 +12,13 @@ import { Query, collection, query } from 'firebase/firestore'
 import { Loading } from '@components/loading'
 import { Card } from '@types'
 
+/**
+ * @returns {JSX.Element} return List of tasks
+ */
 export const CardsList = React.memo(() => {
+    /**
+     * @type {Query<Card>}
+     */
     const [tasks, loading, error] = useCollectionData(
         query(collection(fireStore, 'tasks')) as Query<Card>,
     )

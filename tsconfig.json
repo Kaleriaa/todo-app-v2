@@ -13,6 +13,7 @@
         "moduleResolution": "Node",
         "resolveJsonModule": true,
         "isolatedModules": true,
+        "outDir": "./docs",
         "noEmit": true,
         "jsx": "react-jsx",
         "baseUrl": "./src",
@@ -25,6 +26,7 @@
             "@ui/*": ["ui/*"]
         }
     },
+
     "include": ["src"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }

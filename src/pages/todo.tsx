@@ -1,5 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { Navigate } from 'react-router-dom'
 import { changeTheme } from '@modules/header/slice'
 import { RootState } from '@redux/store'
 import { AppHeader } from '@modules/header'
@@ -12,10 +13,13 @@ const ToDo = () => {
     const theme = useSelector(
         (state: RootState) => state.headerSlice.themeColor,
     )
+    const { uid } = useSelector((state: RootState) => state.userSlice)
 
     React.useEffect(() => {
         dispatch(changeTheme(localStorage.getItem('theme') || ''))
     }, [])
+
+    if (!uid) return <Navigate to="/todo-v2/" replace />
 
     return (
         <Container bg={theme}>

@@ -5,6 +5,9 @@ export type ColorState = Record<'color' | 'currentColor', string> & {
     onChangeTheme: (color: string) => void
 }
 
+/**
+ * @type {ColorState}
+ */
 export const Colors: React.FC<ColorState> = (props) => {
     return (
         <ColorBlock

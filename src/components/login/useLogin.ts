@@ -3,6 +3,9 @@ import { login } from './login'
 import { useDispatch } from 'react-redux'
 import { loginUser } from '@modules/user/slice'
 
+/**
+ * @returns {Promise<void>} return func for login
+ */
 export const useLogin = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch()

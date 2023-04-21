@@ -2,6 +2,10 @@ type CardPropsType = {
     [key: string]: string
 }
 
+/**
+ * @type {CardPropsType[]}
+ * @returns {CardPropsType[]} return card`s labels
+ */
 export const cardLabels: CardPropsType[] = [
     { columnId: 'as12', title: 'Важные события недели' },
     { columnId: 'b23n', title: 'Задачи на неделю' },
@@ -9,6 +13,9 @@ export const cardLabels: CardPropsType[] = [
     { columnId: 'nm98', title: 'Выполнено' },
 ]
 
+/**
+ * @type {string[]}
+ */
 export const coverColor: string[] = [
     '#D69960',
     '#A960D6',

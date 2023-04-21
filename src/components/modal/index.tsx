@@ -9,6 +9,11 @@ import { doc, deleteDoc, updateDoc } from 'firebase/firestore'
 import { fireStore } from 'configs/firebase'
 import { Avatar } from '@ui/avatar'
 
+/**
+ * @type {ModalState}
+ * @param props
+ * @returns
+ */
 export const Modal: React.FC<ModalState> = (props) => {
     const [text, setText] = React.useState<string>('')
     const [active, setActive] = React.useState<boolean>(false)

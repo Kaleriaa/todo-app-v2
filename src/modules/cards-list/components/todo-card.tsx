@@ -9,6 +9,11 @@ import { Modal } from '@components/modal'
 import { doc, updateDoc } from 'firebase/firestore'
 import { fireStore } from 'configs/firebase'
 
+/**
+ * @param props
+ * @type {Card & ColorToDo}
+ * @returns {JSX.Element} return Task element
+ */
 export const ToDoCard: React.FC<Card & ColorToDo> = (props) => {
     const [visible, setVisible] = React.useState<boolean>(false)
 

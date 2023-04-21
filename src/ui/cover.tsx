@@ -6,6 +6,9 @@ type CoverType = {
     color: string
 }
 
+/**
+ * @type {CoverType}
+ */
 export const Cover: React.FC<CoverType> = ({ height, color }) => {
     return <CoverBlock color={color} height={height} />
 }

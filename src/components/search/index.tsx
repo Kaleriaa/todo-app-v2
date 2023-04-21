@@ -2,6 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import { SearchState } from './type'
 
+/**
+ * @type {SearchState}
+ * @param props
+ * @returns
+ */
 export const Search: React.FC<SearchState> = (props) => {
     return (
         <Wrapper>

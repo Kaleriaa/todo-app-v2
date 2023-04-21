@@ -2,8 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { Google } from './google-icon'
 import { useLogin } from './useLogin'
-import { auth } from 'configs/firebase'
 
+/**
+ * @returns {JSX.Element} return button for login
+ */
 export const Login = () => {
     const login = useLogin()
 

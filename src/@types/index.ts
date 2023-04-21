@@ -5,6 +5,9 @@ export type Card = Record<
     text?: string
 }
 
+/**
+ * @type {User}
+ */
 export type User = Record<
     'uid' | 'displayName' | 'email' | 'photoURL',
     string | null

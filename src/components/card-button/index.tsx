@@ -3,6 +3,10 @@ import styled from 'styled-components'
 import { ButtonState } from './type'
 import { CloseButton } from '@ui/close-button'
 
+/**
+ * @type {ButtonState}
+ * @returns {JSX.Element} return Button
+ */
 export const AddButton: React.FC<ButtonState> = ({
     active,
     onAddButton,

@@ -1,0 +1,16 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "source": {
+    "include": ["."],
+    "includePattern": ".+\\.ts(doc|x)?$"
+  },
+  "sourceType": "module",
+  "opts": {
+        "destination": "./out/",       
+        "recurse": true         
+    }
+
+}
