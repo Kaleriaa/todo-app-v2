@@ -8,6 +8,8 @@
 
 A simple Todo App made with React, Typescript, Redux Toolkit and Vite.
 
+[RUN HERE](https://kaleriaa.github.io/todo-v2/)
+
 ## Installation
 
 1. Clone this repository and run `npm i`.
